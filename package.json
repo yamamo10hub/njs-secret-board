@@ -8,6 +8,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "pug": "2.0.4"
+    "http-auth": "3.2.3",
+    "pg": "8.5.1",
+    "pg-hstore": "2.3.3",
+    "pug": "2.0.4",
+    "sequelize": "6.5.1"
   }
 }
