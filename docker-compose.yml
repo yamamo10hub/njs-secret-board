@@ -16,3 +16,8 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: secret_board
       TZ: "Asia/Tokyo"
+    volumes:
+      - secret-board-db:/var/lib/postgresql/data
+volumes:
+  secret-board-db:
+    external: true
