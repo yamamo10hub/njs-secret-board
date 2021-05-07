@@ -10,9 +10,9 @@ const basic = auth.basic({
 const server = http.createServer(basic, (req,res) => {
   //res.end('hi');
   router.route(req,res);
-}).on('error', e => {
+}).on('error', (e) => {
   console.error('Server Error', e);
-}).on('clientError', e => {
+}).on('clientError', (e) => {
   console.error('Client Error', e);
 });
 
