@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "cookies": "0.8.0",
+    "dayjs": "1.10.4",
     "http-auth": "3.2.3",
     "pg": "8.5.1",
     "pg-hstore": "2.3.3",
