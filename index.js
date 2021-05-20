@@ -16,7 +16,9 @@ const server = http.createServer(basic, (req,res) => {
   console.error('Client Error', e);
 });
 
-const port = 8000;
+// 環境変数があればそれを使う。無ければ8000
+//const port = 8000;
+const port = process.env.PORT || 8000;
 server.listen(port, () => {
   console.info('Listening on ' + port);
 });
